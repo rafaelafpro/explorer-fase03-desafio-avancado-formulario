@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie seu Mentor - Rocketseat Explorer Stage 03</title>
+
+    <link rel="stylesheet" href="style.css" class="css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>AVALIE SUA MENTORIA</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="images/img1.svg" alt="Desenho de um balão com estrelas de avaliação">
+            <div class="red-overlay">
+                <h3>INFORMAÇÕES PESSOAIS</h3>
+            </div>
+
+        </header>
+        <form action="">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="student-fname">Nome</label>
+                            <input type="text" id="student-fname" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="student-lname">Sobrenome</label>
+                            <input type="text" id="student-lname" />
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="student-email">E-mail <span>(digite um e-mail válido)</span></label>
+                        <input type="email" id="student-email" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                    <div class="input-wrapper">
+                        <label for="mentor-name">Selecione quem foi o seu mentor</label>
+                        <select id="mentor-name">
+                            <option value="maykao">Mayk Brito</option>
+                            <option value="diego">Diego Fernandes</option>
+                            <option value="rafa">Rafael Andrade</option>
+                        </select>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="mentor-feedbak">Feedback sobre o mentor</label>
+                        <textarea name="mentor-feedback" id="mentor-feedback"></textarea>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="mentor-questions">
+                        <label for="mentor-questions">Todas as minhas dúvidas foram esclarecidas durante a
+                            mentoria</label>
+
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="next-mentorship-date">Data <span>(DD/MM/AAAA)</span>
+                            </label>
+                            <input type="date" id="next-mentorship-date" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="next-mentorship-begin">Das
+                            </label>
+                            <input type="time" id="next-mentorship-begin" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="next-mentorship-begin">Até
+                            </label>
+                            <input type="time" id="next-mentorship-end" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit">
+                SALVAR
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
